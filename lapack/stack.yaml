@@ -1,0 +1,23 @@
+resolver: lts-13.5
+
+packages:
+- .
+
+extra-deps:
+- ../lapack-ffi
+- ../blas-ffi
+- ../netlib-ffi
+- ../comfort-array
+- ../guarded-allocation
+- ../netlib-carray
+- ../carray
+- ../storable-complex
+- ../storable-record
+- ../unique-logic-tf
+- ../data-ref
+- ../data-accessor
+- ../chasing-bottoms
+- ../quickcheck-transformer
+
+extra-lib-dirs:
+  - J:/dev/projects/foreigner/installed/lib

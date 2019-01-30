@@ -1,0 +1,11 @@
+resolver: lts-13.5
+
+packages:
+- .
+
+extra-deps:
+- ../lapack-ffi
+- ../netlib-carray
+- ../netlib-ffi
+- ../carray
+- ../storable-complex

@@ -1,0 +1,8 @@
+resolver: lts-13.5
+
+packages:
+- .
+
+extra-deps:
+- ../data-ref
+- ../data-accessor

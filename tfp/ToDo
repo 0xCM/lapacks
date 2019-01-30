@@ -1,0 +1,28 @@
+Kann man Add beschleunigen mit spezieller Ziffer Dec10?
+
+Num.Representation
+   Braucht man diese Klasse?
+   Braucht man überhaupt Repr-Funktion
+      oder kann man stattdessen auf den Dec-Typkonstruktor schauen?
+
+kann man assertPos et.al. mit Test der Zahl verbinden?
+
+Type.Data.Num.Decimal.Number:
+   Soll man die Typfunktionen für einzelne Ziffern (z.B. AddDigit)
+      nach "Digit" verschieben?
+
+class NaturalT x => PositiveT x
+   (IsNatural x ~ True) als Überklassen entfernen
+
+Test:
+   statt
+       testMul2 :: D0 :*: D1 -> D0
+       testMul2 = Prelude.id
+
+   könnte man auch schreiben:
+       testMul2 :: Proxy D0 -> Proxy D1 -> Proxy D0
+       testMul2 = Num.mul
+
+Decimal.Number.Decimal vs. Dec
+   Dieses Namensschema lässt sich schlecht auf Unary übertragen
+   Decimal -> Representation?

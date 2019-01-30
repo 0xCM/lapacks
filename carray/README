@@ -1,0 +1,29 @@
+This package provides immutable and mutable arrays that can be used in foreign
+calls.  They are 16-byte aligned by default to facilitate use of SIMD
+instructions.  To build this package, use:
+
+  runhaskell Setup.lhs configure
+  runhaskell Setup.lhs build
+  runhaskell Setup.lhs haddock          (optional)
+  runhaskell Setup.lhs install
+
+Then run the tests:
+
+  cd tests
+  ghc -O2 --make tests.hs -o tests && ./tests  # checks QC properties 
+
+In addition, there are versions two of shootout entries which use arrays.
+Modified versions of these are in the tests directory, using various array
+implementations.  To build, benchmark, and check that results match, run:
+
+  ./runtests.sh
+
+
+Exposed Modules:
+
+Data.Array.CArray             Immutable interface, enhanced for foreign calls,
+                              multiple dimensions, mapping, and norms.
+
+Data.Array.IOCArray	      Mutable interface, enhanced for foreign calls
+
+Data.Array.CArray.Base        Internals

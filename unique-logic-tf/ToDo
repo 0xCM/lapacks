@@ -1,0 +1,13 @@
+Not done:
+
+The stack of monads consists temporarily of three monads:
+   WriterT, custom monad transformer, data-ref monad.
+
+I tried to merge the latter ones to 'm'
+which is both an instance of Ref.C and can be extended by the user.
+Unfortunately, this means that Sys.globalVariable and Sys.query
+are in this monad, which is too much, since they only require (Ref.C m).
+I started an attempt in unique-logic-tf-merged-w-s directory.
+However, I cannot complete it since Example.Verify.globalVariable
+would need to get the variable reference
+from a potentially failing Exceptional action.
