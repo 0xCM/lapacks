@@ -1,0 +1,30 @@
+resolver: lts-13.5
+
+packages:
+- blas-ffi
+- blas-carray
+- blas-comfort-array
+- carray
+- chasing-bottoms
+- combinatorial
+- comfort-array
+- comfort-graph
+- data-accessor
+- data-ref
+- guarded-allocation
+- lapack
+- lapack-carray
+- lapack-comfort-array
+- lapack-ffi
+- netlib-carray
+- netlib-comfort-array
+- netlib-ffi
+- quickcheck-transformer
+- storable-complex
+- storable-record
+- storablevector
+- storable-tuple
+- unique-logic-tf
+
+extra-lib-dirs:
+  - J:/dev/projects/foreigner/installed/lib
