@@ -9,3 +9,6 @@ extra-deps:
 - ../netlib-ffi
 - ../carray
 - ../storable-complex
+
+extra-lib-dirs:
+  - J:/dev/projects/foreigner/installed/lib

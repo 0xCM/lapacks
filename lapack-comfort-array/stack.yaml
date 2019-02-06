@@ -2,11 +2,12 @@ resolver: lts-13.5
 
 packages:
 - .
+
 extra-deps:
-- ../blas-ffi
-- ../netlib-carray
+- ../lapack-ffi
+- ../netlib-comfort-array
 - ../netlib-ffi
-- ../carray
+- ../comfort-array
 - ../storable-complex
 
 extra-lib-dirs:
