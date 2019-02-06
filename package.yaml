@@ -1,0 +1,65 @@
+name:                lapacks
+version:             0.0.1
+github:              "0xCM/lapaks"
+license:             "BSD"
+author:              "Chris Moore"
+maintainer:          "0xCM00@gmail.com"
+copyright:           "2018 Chris Moore"
+
+
+
+dependencies:
+- carray
+- storable-complex
+- blas-ffi
+- blas-carray
+- netlib-ffi
+- netlib-carray
+- lapack-carray
+- lapack-ffi
+
+- chasing-bottoms
+- combinatorial
+- data-accessor
+- data-ref
+- guarded-allocation
+- quickcheck-transformer
+- storable-record
+- storablevector
+- storable-tuple
+- unique-logic-tf
+
+extra-libraries: libopenblas
+
+library:
+  storable-complex:
+    source-dirs: storable-complex
+
+library:
+  carray:
+    source-dirs: carray
+
+library:
+  netlib-carray:
+    source-dirs: netlib-carray
+
+library:
+  netlib-ffi:
+    source-dirs: netlib-ffi
+
+library:
+  blas-ffi:
+    source-dirs: blas-ffi
+
+library:
+  blas-carray:
+    source-dirs: blas-carray
+
+library:
+  lapack-ffi:
+    source-dirs: lapack-ffi
+
+library:
+  lapack-carray:
+    source-dirs: lapack-carray
+
